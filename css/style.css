@@ -1,3 +1,30 @@
 body {
+    font-family: 'Oswald', sans-serif;
     background-color: #5cdb98;
+    color: #6c149e;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif;
+    font-size: 50;
+}
+
+header {
+    text-align: center;
+}
+
+#hero, footer {
+    color: #D9A74A;
+    border: 2px solid #764C8F;
+    background-color: #8C6722;
+    text-align: center;
+    padding: 10px;
+}
+
+#hero img {
+    width: 200px;;
+}
+
+#bio {
+    text-align: center;
 }
