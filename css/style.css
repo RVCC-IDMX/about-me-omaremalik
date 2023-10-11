@@ -6,12 +6,12 @@ body {
 
 h1,h2,h3,h4,h5,h6{
     font-family: 'Poppins', sans-serif;
-    font-size: 50;
+    font-size: 40pt;
     text-align: center;
 }
 
-h1 {
-    font-size: 40pt;
+h2 {
+    text-align: .1em;
 }
 
 header {
@@ -29,7 +29,7 @@ header {
 }
 
 #hero img {
-    width: 200px;;
+    width: 300px;;
 }
 
 /* Bio Section */
@@ -40,6 +40,12 @@ header {
 
 /* Hobbies Section*/
 
+#hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #hobbies ul li:nth-child(even)  {
     color: black;
 }
@@ -48,6 +54,7 @@ header {
 
 #gallery {
     border: 2px solid #764C8F;
+    margin-bottom: 2rem;
 }
 
 #gallery img {
@@ -79,3 +86,19 @@ header {
     margin-right: 8px;
   }
   
+  
+@media screen and (min-width: 60em) {
+
+    figure {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    figcaption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        margin-left: 1rem;
+    }
+}
