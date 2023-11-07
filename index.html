@@ -141,6 +141,69 @@
    
    </style>
 
+   <section id="Contact"> 
+       
+        <h2>Contact Us:</h2>
+
+        <form id="contactForm" name="contactForm" method="post"
+        data-netlify="true"
+
+            <fieldset>
+
+                <legend>Contact Form</legend>
+
+                <div id="formElements">
+                    <!--Name-->
+                    <label for="name">Name (Required)</label> 
+                    <input type="text" id="name" name="name" required> 
+
+                    <!--Email-->
+                    <label for="email">Email (Required)</label> 
+                    <input type="email" id="email" name="email" required> 
+
+                    <!--Phone-->
+                    <label for="phone">Phone (optional)</label> 
+                    <input type="tel" id="phone" name="email">
+
+                    <!--Phone type-->
+                    <label for="phoenType">Phone type (optional)</label>
+                    <select id="phoenType" name="phoenType">
+                        <option value="" selected>Select phone type</option>
+                        <option value="Mobile">Mobile</option>
+                        <option value="Work">Work</option>
+                        <option value="Home">Home</option>
+                    </select>
+
+                    <!--Message-->
+                    <label for="message">Message (optional)</label>
+                    <textarea id="message" name="message" rows="7"></textarea>
+
+                    <!--Reply-->
+                    <fieldset>
+                        <legend> Would you like a repy?</legend>
+
+                        <ul>
+                            <li>
+                                <input type="radio" id="messageYes" name="reply" value="Yes a reply please">
+                                <label for="messageYes"> that would be nice.</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="messageNo" name="reply" value="No, reply please" checked>
+                                <label for="messageNo"> thank you.</label>
+                            </li>
+                        </ul>
+
+                    </fieldset>
+
+                    <!--Submit-->
+                    <button type="submit">Send</button>
+                </div>
+            
+        </fieldset>
+
+        </form>
+   </section>
+
     </main>
 
     <footer>
