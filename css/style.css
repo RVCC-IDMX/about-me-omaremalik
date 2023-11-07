@@ -4,14 +4,14 @@ body {
     color: #6c149e;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
     font-size: 40pt;
     text-align: center;
 }
 
 h2 {
-    text-align: .1em;
+    text-align: center;
 }
 
 header {
@@ -29,7 +29,7 @@ header {
 }
 
 #hero img {
-    width: 300px;;
+    width: 300px;
 }
 
 /* Bio Section */
@@ -40,13 +40,13 @@ header {
 
 /* Hobbies Section*/
 
-#hobbies{
+#hobbies {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#hobbies ul li:nth-child(even)  {
+#hobbies ul li:nth-child(even) {
     color: black;
 }
 
@@ -61,7 +61,7 @@ header {
     max-width: 100%;
 }
 
-#gallery figure{
+#gallery figure {
     text-align: center;
 }
 
@@ -69,7 +69,7 @@ header {
 
 #lit {
     border: 2px solid #764C8F;
-    margin: bottom 2rem;
+    margin-bottom: 2rem;
 }
 
 #lit div {
@@ -80,15 +80,14 @@ header {
     0px 0px 20px #b393d3;
 }
 
-#lit div p:first-child:first-letter {
+#lit div p:first-child::first-letter {
     font-size: 2em;
     float: left;
     margin-right: 8px;
-  }
-  
-  /* tablet size*/
-@media screen and (min-width: 60em) {
+}
 
+/* Tablet size */
+@media screen and (min-width: 60em) {
     figure {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -106,20 +105,19 @@ header {
         width: 100%;
     }
 
-#lit div {
-    max-width: 100%;
-    columns: 20rem;
+    #lit div {
+        max-width: 100%;
+        columns: 20rem;
     }
+}
 
-/* Large screen size*/
-
+/* Large screen size */
 @media screen and (min-width: 100em) {
-
     #gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
-    
+
     hr {
         display: none;
     }
@@ -133,11 +131,50 @@ header {
     }
 }
 
-}
-
 /* Contact Form */
 
 #formElements {
     display: grid;
+    row-gap: 0.5rem; /* Corrected the value */
 }
 
+#contact {
+    padding: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+fieldset {
+    border: 2px solid #764C8F;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+legend {
+    background-color: #764C8F;
+    color: white;
+    padding: .5em;
+}
+
+#contact input, #contact textarea, #contact select, #contact button {
+    padding: .5em;
+    font-size: 1rem;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0px;
+}
+
+#contact li {
+    margin: 1rem;
+}
+
+#contact button {
+    background-color: #764C8F;
+    color: white;
+    border: 1px solid;
+    max-width: 400px;
+    width: 50%;
+    justify-self: center;
+}
