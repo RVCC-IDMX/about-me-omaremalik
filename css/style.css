@@ -1,13 +1,21 @@
 body {
     font-family: 'Oswald', sans-serif;
-    background-color: #5cdb98;
-    color: #6c149e;
+    background-color: #f5f5dc; /* Beige */
+    color: #333333; /* Dark Gray */
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 40pt;
     text-align: center;
+    color: #fcfcfc; /* White */
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40pt;
+    text-align: center;
+    color: #333333; /* Dark Gray */
 }
 
 h2 {
@@ -21,9 +29,9 @@ header {
 /* hero Section */
 
 #hero, footer {
-    color: #D9A74A;
-    border: 2px solid #764C8F;
-    background-color: #8C6722;
+    color: #000000; /* Black */
+    border: 2px solid #333333; /* Dark Gray */
+    background-color: #f5f5dc; /* Beige */
     text-align: center;
     padding: 10px;
 }
@@ -47,44 +55,63 @@ header {
 }
 
 #hobbies ul li:nth-child(even) {
-    color: black;
+    color: #000000; /* Black */
 }
 
 /* Gallery Section*/
 
 #gallery {
-    border: 2px solid #764C8F;
+    border: 2px solid #333333; /* Dark Gray */
     margin-bottom: 2rem;
 }
 
 #gallery img {
     max-width: 100%;
+    transition: transform 0.3s ease-in-out; /* Adding a smooth transition effect */
+}
+
+#gallery img:hover {
+    transform: scale(1.1); /* Increasing the scale on hover */
 }
 
 #gallery figure {
     text-align: center;
 }
 
-/* Lorem Ipsum*/
+/* Article Section */
 
 #lit {
-    border: 2px solid #764C8F;
+    border: 2px solid #333333; /* Dark Gray */
     margin-bottom: 2rem;
+    background-color: #fff; /* White background for better readability */
+    padding: 20px; /* Add padding for content spacing */
+}
+
+#lit h2 {
+    color: #333333; /* Dark Gray */
+    text-align: center;
 }
 
 #lit div {
-    padding: 2rem;
-    max-width: 40rem;
+    max-width: 800px;
     margin: 0 auto;
-    text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
-    0px 0px 20px #b393d3;
 }
 
-#lit div p:first-child::first-letter {
-    font-size: 2em;
-    float: left;
-    margin-right: 8px;
+#lit div p {
+    font-size: 18px;
+    line-height: 1.4; /* Adjusted line height */
+    color: #666666; /* Dark Gray text color */
+    text-align: justify;
 }
+
+
+/* Responsive Styling */
+@media screen and (min-width: 60em) {
+    #lit div {
+        columns: initial; /* Disable columns for wider screens */
+    }
+}
+
 
 /* Tablet size */
 @media screen and (min-width: 60em) {
@@ -145,13 +172,13 @@ header {
 }
 
 fieldset {
-    border: 2px solid #764C8F;
+    border: 2px solid #333333; /* Dark Gray */
     margin-top: 1em;
     margin-bottom: 1em;
 }
 
 legend {
-    background-color: #764C8F;
+    background-color: #333333; /* Dark Gray */
     color: white;
     padding: .5em;
 }
@@ -171,10 +198,24 @@ legend {
 }
 
 #contact button {
-    background-color: #764C8F;
+    background-color: #333333; /* Dark Gray */
     color: white;
     border: 1px solid;
     max-width: 400px;
     width: 50%;
     justify-self: center;
+}
+
+/* Map Section */
+
+#map {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px; /* Adjusted height for better proportions */
+    border: none;
 }
