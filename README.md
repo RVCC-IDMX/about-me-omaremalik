@@ -26,9 +26,9 @@ The color palette chosen for this project aims to create a visually appealing an
 
 ## Citations
 
-To maintain transparency and integrity:
-- Lorem Ipsum text may have been sourced from lorem ipsum generators and other open resources.
-- All images used in the Gallery section are personally owned.
+http://www.stressdriven.com/three-simple-ways-to-embed-maps-in-a-website-or-blog/
+https://developers.google.com/maps/documentation/maps-static/overview
+https://cloud.google.com/blog/products/maps-platform/three-ways-add-map-implementation-your-app-and-when-use-each
 
 
 Thank you for visiting!
